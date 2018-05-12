@@ -1,0 +1,15 @@
+website_home:
+  path:     /
+  defaults: { _controller: WebsiteBundle:Default:index }
+
+website_services:
+    path:     /services
+    defaults: { _controller: WebsiteBundle:Default:services }
+
+website_portfolio:
+    path:     /portfolio
+    defaults: { _controller: WebsiteBundle:Default:portfolio }
+
+website_contact:
+    path:     /contat
+    defaults: { _controller: WebsiteBundle:Default:contact }

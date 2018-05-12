@@ -1,0 +1,51 @@
+{% extends 'WebsiteBundle::layout.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+
+<!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Contactez-nous!</h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{{ path('website_home') }}">Accueil</a>
+        </li>
+        <li class="breadcrumb-item active">Contact</li>
+      </ol>
+
+      <!-- Content Row -->
+      <div class="row">
+        <!-- Map Column -->
+        <div class="col-lg-8 mb-4">
+          <!-- Embedded Google Map -->
+          <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+        </div>
+        <!-- Contact Details Column -->
+        <div class="col-lg-4 mb-4">
+          <h3>Details de contact</h3>
+          <p>
+            Boulevard d'Avroy, 564
+            <br>Liège BE-4020
+            <br>
+          </p>
+          <p>
+            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> (123) 456-7890
+          </p>
+          <p>
+            <abbr title="Email"><i class="fa fa-envelope"></i></abbr>
+            <a href="mailto:name@example.com">name@lab3216.com
+            </a>
+          </p>
+          <p>
+            <abbr title="Hours"><i class="fa fa-clock-o"></i></abbr> Lundi - Vendredi: 9:00 à 17:00
+          </p>
+        </div>
+      </div>
+      <!-- /.row -->
+</div>
+
+{% endblock %}
